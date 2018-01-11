@@ -9,7 +9,7 @@ class Header extends React.Component {
   }
 }
 
-class Action extends React.Component {
+class Action extends React.Component { //these components are basically React classes
   render() {
     return (
       <div>
@@ -21,19 +21,27 @@ class Action extends React.Component {
 
 class Options extends React.Component {
   render () {
-    return <p>Options component here</p>;
+    return (
+      <div>
+        <p>Options component here</p>
+      </div>
+    );
   }
 }
 
 class AddOption extends React.Component {
   render () {
-    return <p>AddOption component here</p>;
+    return (
+      <div>
+        <p>AddOption component here</p>
+      </div>
+    );
   }
 }
 
 const jsx = (
   <div>
-    <Header />
+    <Header /> {/*these components save code and can be easily reused. They are almost like class templates*/}
     <Action />
     <Options />
     <AddOption />

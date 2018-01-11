@@ -51,6 +51,7 @@ var Action = function (_React$Component2) {
 
   _createClass(Action, [{
     key: 'render',
+    //these components are basically React classes
     value: function render() {
       return React.createElement(
         'div',
@@ -80,9 +81,13 @@ var Options = function (_React$Component3) {
     key: 'render',
     value: function render() {
       return React.createElement(
-        'p',
+        'div',
         null,
-        'Options component here'
+        React.createElement(
+          'p',
+          null,
+          'Options component here'
+        )
       );
     }
   }]);
@@ -103,9 +108,13 @@ var AddOption = function (_React$Component4) {
     key: 'render',
     value: function render() {
       return React.createElement(
-        'p',
+        'div',
         null,
-        'AddOption component here'
+        React.createElement(
+          'p',
+          null,
+          'AddOption component here'
+        )
       );
     }
   }]);
@@ -117,6 +126,7 @@ var jsx = React.createElement(
   'div',
   null,
   React.createElement(Header, null),
+  ' ',
   React.createElement(Action, null),
   React.createElement(Options, null),
   React.createElement(AddOption, null)
