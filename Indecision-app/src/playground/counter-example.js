@@ -1,3 +1,5 @@
+//stateless functional component
+
 class Counter extends React.Component {
   constructor(props){
     super(props);
@@ -8,6 +10,19 @@ class Counter extends React.Component {
       count: 0
     };
   }
+  componentDidMount() {
+    const stringCount = localStorage.getItem('count');
+    const count = parseInt(stringCount, 10);
+
+    if(!isNaN(count)) {
+      this.setState(() => ({count: count}));
+    }
+  }
+  componentDidUpdate(prevProps, prevState) {
+    if(prevState !== this.state.count) {
+      localStorage.setItem('count', this.state.count);
+  }
+}
   handleAddOne() {
     this.setState((prevState) => {
       return {
