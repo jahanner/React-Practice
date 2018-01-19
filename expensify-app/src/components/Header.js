@@ -14,9 +14,6 @@ const Header = () => (
   <header>
     <h1>Expensify</h1>
     <p>
-      {linkTo('/edit', 'Edit Page')}
-    </p>
-    <p>
       {linkTo('/help', 'Help Page')}
     </p>
     <p>

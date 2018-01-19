@@ -1,9 +1,9 @@
 import React from 'react';
 
-const AddExpensePage = () => (
+const HomePage = () => (
   <div>
     Expensify add expense page
   </div>
 );
 
-export default AddExpensePage;
+export default HomePage;
