@@ -3,25 +3,20 @@ import {NavLink} from 'react-router-dom';
 
 const linkTo = (route, text) => { {/*quick function to set up links*/}
     if(route === '/'){
-      return <NavLink to={route} activeClassName='is-active' exact={true}>{text}</NavLink>
+      return <p><NavLink to={route} activeClassName='is-active' exact={true}>{text}</NavLink></p>
   }
   else {
-    return <NavLink to={route} activeClassName='is-active'>{text}</NavLink>
+    return <p><NavLink to={route} activeClassName='is-active'>{text}</NavLink></p>
   };
 }
 
 const Header = () => (
   <header>
     <h1>Expensify</h1>
-    <p>
       {linkTo('/help', 'Help Page')}
-    </p>
-    <p>
       {linkTo('/', 'Home Page')}
-    </p>
-    <p>
       {linkTo('/create', 'AddExpense Page')}
-    </p>
+      {linkTo('/edit', 'Expense')}
   </header>
 )
 
