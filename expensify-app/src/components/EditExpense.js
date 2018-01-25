@@ -1,10 +1,9 @@
 import React from 'react';
 
 const EditExpensePage = (props) => {
-  console.log(props);
   return (
     <div>
-      Edit Expense Page with id of {props.match.params.id}
+      Edit Expense Page with current key of {props.location.key}
     </div>
   );
 };
