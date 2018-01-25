@@ -1,8 +1,10 @@
-import React from 'react';
+import React from "react";
+import ExpenseForm from "./ExpenseForm";
 
 const HomePage = () => (
   <div>
-    Expensify add expense page
+    <h1>Add expense</h1>
+    <ExpenseForm />
   </div>
 );
 
